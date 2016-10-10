@@ -16,9 +16,17 @@
 title: MonKey
 email: zbaxrl@foxmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://zbaxrl.github.io" # the base hostname & protocol for your site
+url: "https://zbaxrl.github.io" # the base hostname & protocol for your site
 github_username: monkey2000
 
+navigation:
+  - text: Home
+    url: /
+  - text: About
+    url: /about
+
 # Build settings
+sass:
+    style: compressed
 markdown: kramdown
-theme: minima
+#theme: minima
