@@ -18,7 +18,8 @@ email: zbaxrl@foxmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://zbaxrl.github.io" # the base hostname & protocol for your site
 repository: "https://github.com/zbaxrl/zbaxrl.github.io"
-github_username: monkey2000
+github_username: "monkey2000"
+your_name: "MonKey Lee"
 
 navigation:
   - text: Home
@@ -30,4 +31,4 @@ navigation:
 sass:
     style: compressed
 markdown: kramdown
-#theme: minima
+
