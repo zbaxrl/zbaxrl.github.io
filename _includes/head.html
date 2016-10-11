@@ -13,7 +13,6 @@
   <link rel="canonical"
         href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
 
-  <style>body { font-size: 14px; }</style>
   <!-- hack.css -->
   <link rel="stylesheet" href="https://npmcdn.com/hack/dist/hack.css" />
   {% if site.theme_mode == 'standard' %}
@@ -21,6 +20,7 @@
   {% elsif site.theme_mode == 'dark' %}
   <link rel="stylesheet" href="https://npmcdn.com/hack/dist/dark.css" />
   {% endif %}
+  <style>body { font-size: 14px; }</style>
 
   <!-- Prism.js -->
   <link rel="stylesheet" href="https://npmcdn.com/prismjs@1.5.1/themes/prism.css" />
