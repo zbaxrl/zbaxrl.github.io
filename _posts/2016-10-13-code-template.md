@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 新的博客
+title: 代码模板
 date: 2016-10-13 19:52:00
 categories: 杂
 tags: OI
