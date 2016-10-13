@@ -34,3 +34,4 @@ markdown: kramdown
 
 kramdown:
   syntax_highlighter: rouge
+highlighter: rouge
