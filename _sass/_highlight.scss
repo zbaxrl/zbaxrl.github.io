@@ -1,6 +1,6 @@
 // This file only deal with code highlighting
 
-code.highlighter-rouge {
+div.highlighter-rouge {
   padding: 0;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
@@ -8,4 +8,5 @@ code.highlighter-rouge {
   font-size: 85%;
   background-color: rgba(0,0,0,0.04);
   border-radius: 3px;
+  max-width: 55rem;
 }
