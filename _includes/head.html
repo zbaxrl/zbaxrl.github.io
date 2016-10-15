@@ -14,16 +14,14 @@
         href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
 
   <!-- hack.css -->
-  <link rel="stylesheet" href="https://npmcdn.com/hack/dist/hack.css" />
+  <link rel="stylesheet" href="{{ "/css/hack/hack.css" | repend: site.base }}" />
   {% if site.theme_mode == 'standard' %}
-  <link rel="stylesheet" href="https://npmcdn.com/hack/dist/standard.css" />
+  <link rel="stylesheet" href="{{ "/css/hack/standard.css" | repend: site.base }}" />
   {% elsif site.theme_mode == 'dark' %}
-  <link rel="stylesheet" href="https://npmcdn.com/hack/dist/dark.css" />
+  <link rel="stylesheet" href="{{ "/css/hack/dark.css" | repend: site.base }}" />
   {% endif %}
-  <style>body { font-size: 14px; }</style>
 
-  <!-- Prism.js -->
-  <link rel="stylesheet" href="https://npmcdn.com/prismjs@1.5.1/themes/prism.css" />
+  <link rel="stylesheet" href="{{ "/css/highlight.css" | repend: site.base }}" />
 
   <!-- Custom style -->
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
