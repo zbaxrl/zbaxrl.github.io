@@ -11,8 +11,10 @@ tags: [Hash, 字符串匹配]
 然后例题就是这个辣！
 
 主要解题思路是把一维的Rabin-Karp改成二维的。
-\\[ Hash(S_i) = \sum _{ i=1 }^{ len(S) }{ S[i] p^{len(S) - i} } \pmod q \\]
-\\[ Hash(S_{i+1}) = pHash(S_i) + S[i] \pmod q \\]
+
+$$ Hash(S_i) = \sum _{ i=1 }^{ len(S) }{ S[i] p^{len(S) - i} } \pmod q $$
+
+$$ Hash(S_{i+1}) = pHash(S_i) + S[i] \pmod q $$
 
 二维的不好用 LaTeX 写出来，所以说直接扔代码XDDDDD
 
