@@ -2,6 +2,27 @@
 
 div.highlighter-rouge {
   font-size: 85%;
-  border-radius: 3px;
-  max-width: 55rem;
 }
+
+div.highlighter-rouge .gl {
+  width: 3rem;
+  border: 0px;
+  border-right: 1px solid #ccc;
+}
+
+div.highlighter-rouge .gl > pre {
+  width: 3rem;
+  padding-left: 0;
+  padding-right: 1rem;
+  border: 0px;
+}
+
+div.highlighter-rouge .code {
+  max-width: 50rem;
+  border: 0px;
+}
+
+div.highlighter-rouge .code > pre {
+  border: 0px;
+}
+
