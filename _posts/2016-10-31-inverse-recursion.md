@@ -11,6 +11,7 @@ tags: [数论, 逆元]
 设 $$ t = M / i, k = M % i $$ ，那么有：
 
 $$ it + k \equiv 0 \pmod M $$
+
 $$ -it \equiv k \pmod M $$
 
 两边同乘 $$ ik $$：
