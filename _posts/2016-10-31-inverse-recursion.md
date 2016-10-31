@@ -27,6 +27,7 @@ $$ Inv[1] = 1 $$
 
 
 ##代码模板
+
 ```cpp
 const int MOD = 1E9+7;
 int Inv[100000];
