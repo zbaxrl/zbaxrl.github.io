@@ -20,7 +20,7 @@ $$ -tk^{-1} \equiv i^{-1} \pmod M $$
 
 带回：
 
-$$ Inv[i] = (M - M/i) * Inv[M % i] % M $$
+$$ Inv[i] = (M - M/i) * Inv[M \% i] \% M $$
 
 易知递推边界：
 
