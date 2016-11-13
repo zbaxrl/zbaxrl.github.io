@@ -14,7 +14,7 @@ $$ it + k \equiv 0 \pmod M $$
 
 $$ -it \equiv k \pmod M $$
 
-两边同乘 $$ ik $$：
+两边同乘 $$ (ik)^{-1} $$：
 
 $$ -tk^{-1} \equiv i^{-1} \pmod M $$
 
