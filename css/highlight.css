@@ -1,6 +1,6 @@
 .highlight table td { padding: 5px; background: #122b3b; }
 .highlight table pre { margin: 0; background: #122b3b; }
-.highlight .lineno { color: #FFFFFF; }
+.highlight .lineno { line-height: 15px; color: #FFFFFF; }
 .highlight .gh {
   color: #999999;
 }
