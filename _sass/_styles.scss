@@ -1,9 +1,9 @@
 // This file contains custom (non hack.css) styles
 
 body { background: rgb(233, 233, 233); }
+.post img { display: block; }
 
 .t-hackcss {  // Main prefix to avoid collisions
-
   // navigation.html
 
   &-navigation {
