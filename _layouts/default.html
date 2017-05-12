@@ -57,7 +57,7 @@
                 var cur = display[_];
                 if(!cur.innerHTML) continue;
                 var p = document.createElement("span");
-                katex.render(cur.innerHTML, p, {displayMode: true});
+                katex.render(cur.innerHTML.replace(/%.*/g, ''), p, {displayMode: true});
                 if(!cur.nextSibling)
                     cur.parentNode.appendChild(p);
                 else
