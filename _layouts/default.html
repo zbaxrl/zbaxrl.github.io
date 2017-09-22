@@ -33,12 +33,12 @@
     (function () {
         var style = document.createElement("link");
         style.rel = "stylesheet";
-        style.href  = "//js.cdnbee.com/files/katex/0.7.1/katex.min.css";
+        style.href  = "//cdn.bootcss.com/KaTeX/0.8.3/katex.min.css";
         document.getElementsByTagName("head")[0].appendChild(style);
 
         var script = document.createElement("script");
         script.type = "text/javascript";
-        script.src  = "//js.cdnbee.com/files/katex/0.7.1/katex.min.js";
+        script.src  = "//cdn.bootcss.com/KaTeX/0.8.3/katex.min.js";
         script.onload = function() {
             var nodisplay = document.querySelectorAll("script[type=\"math\/tex\"]");
             for(var _ in nodisplay) {
