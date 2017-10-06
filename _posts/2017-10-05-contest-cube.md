@@ -35,45 +35,45 @@ using namespace std;
 int N;
 
 struct group {
-	int C[25];
-	
-	group() {
-		for(int i=1;i<=24;i++)
-			C[i] = i;
-	}
-	
-	group(const group &a) {
-		memcpy(C, a.C, sizeof(C));
-	}
-	
-	group(const int* sq) {
-		for(int i=1;i<=24;i++)
-			C[i] = sq[i];
-	}
-	
-	friend group operator*(const group &a, const group &b) {
-		group ret;
-		
-		for(int i=1;i<=24;i++)
-			ret.C[i] = b.C[a.C[i]];
-		
-		return ret;
-	}
-	
-	bool check() {
-		for(int i=1;i<=24;i+=4) {
-			if(C[i] != C[i+1] || C[i] != C[i+2] || C[i] != C[i+3])
-				return false;
-		}
-		return true;
-	}
+    int C[25];
+    
+    group() {
+        for(int i=1;i<=24;i++)
+            C[i] = i;
+    }
+    
+    group(const group &a) {
+        memcpy(C, a.C, sizeof(C));
+    }
+    
+    group(const int* sq) {
+        for(int i=1;i<=24;i++)
+            C[i] = sq[i];
+    }
+    
+    friend group operator*(const group &a, const group &b) {
+        group ret;
+        
+        for(int i=1;i<=24;i++)
+            ret.C[i] = b.C[a.C[i]];
+        
+        return ret;
+    }
+    
+    bool check() {
+        for(int i=1;i<=24;i+=4) {
+            if(C[i] != C[i+1] || C[i] != C[i+2] || C[i] != C[i+3])
+                return false;
+        }
+        return true;
+    }
 };
 
 group op[10];
 
 void init() {
-	int *ptr = op[1].C;
-	ptr[1] = 3;
+    int *ptr = op[1].C;
+    ptr[1] = 3;
     ptr[2] = 1;
     ptr[3] = 4;
     ptr[4] = 2;
@@ -126,40 +126,40 @@ group ss;
 
 int history[47]; int hpos;
 int dfs(group g, int cla, int cnt) {
-	if((g*ss).check()) {
-//		puts("!");
-		return cnt;
-	}
-	if(cnt > N) return 0;
-	
-	int k;
-	for(int i=1;i<=9;i++) {
-		if(cl[i] != cla) {
-			if((k = dfs(op[i] * g, cl[i], cnt+1))) {
-				history[hpos++] = i;
-				return k;
-			}
-		}
-	}
-	
-	return 0;
+    if((g*ss).check()) {
+//      puts("!");
+        return cnt;
+    }
+    if(cnt > N) return 0;
+    
+    int k;
+    for(int i=1;i<=9;i++) {
+        if(cl[i] != cla) {
+            if((k = dfs(op[i] * g, cl[i], cnt+1))) {
+                history[hpos++] = i;
+                return k;
+            }
+        }
+    }
+    
+    return 0;
 }
 
 int main() {
-	freopen("cube.in", "r", stdin);
-	freopen("cube.out", "w", stdout);
-	
-	init();
-	scanf("%d", &N);
-	
-	group gg;
-	for(int i=1;i<=24;i++) scanf("%d", &ss.C[i]);
-	
-	dfs(gg, 0, 1);
-	
-	for(int i=hpos-1;i>=0;i--) {
-		printf("%d ", history[i]);
-	}
-	puts("");
+    freopen("cube.in", "r", stdin);
+    freopen("cube.out", "w", stdout);
+    
+    init();
+    scanf("%d", &N);
+    
+    group gg;
+    for(int i=1;i<=24;i++) scanf("%d", &ss.C[i]);
+    
+    dfs(gg, 0, 1);
+    
+    for(int i=hpos-1;i>=0;i--) {
+        printf("%d ", history[i]);
+    }
+    puts("");
 }
 ```
